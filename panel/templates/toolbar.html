@@ -1,0 +1,87 @@
+<div class="f-nav">
+    <md-toobar layout layout-align="center center" class="md-toolbar-tools" id="fieldID">
+        <span flex></span>
+        <a href ui-sref="app.home"><img src="images/logo.png" alt="logo" style="cursor: pointer" href="app.home"></a>
+        <span flex></span>
+        <span flex></span>
+        <span flex></span>
+        <div class="navdrawer" layout="row" id="navdraweritems" hide-sm hide-xs>
+            <a href ui-sref="app.home">Home</a>
+            <a href ui-sref="app.aboutUs">About</a>
+            <a href ui-sref="app.aboutUs">Demo</a>
+            <a>Read</a>
+            <a href ui-sref="app.do">Do</a>
+            <a ng-click="socialPage()">Vendors</a>
+            <a ng-click="openLoginPage()">Register</a>
+            <a ng-click="openLoginPage()" id="loginText">LOGIN</a>
+            <a><i class="ion-earth" style="font-size:20px;" id="openGoogleTranslator"></i></a>
+        </div>
+        <span flex></span>
+        <md-button hide-gt-sm class="md-primary" ng-click="toggleRight()">
+            <i class="ion-navicon" style="color:white;font-size:25px" id="togglebutton"></i>
+            <md-tooltip>
+                More
+            </md-tooltip>
+        </md-button>
+    </md-toobar>
+</div>
+<md-sidenav class="md-sidenav-right md-whiteframe-z2" md-component-id="right" ng-cloak>
+    <md-content class="md-padding" layout="column">
+        <md-list layout="column" layout-align="center center" class="navitems" ng-click="close()">
+            <a href ui-sref="app.home">Home</a>
+            <a href ui-sref="app.aboutUs">About</a>
+            <a href ui-sref="app.aboutUs">Demo</a>
+            <a ng-click="">Read</a>
+            <a href ui-sref="app.do">Do</a>
+            <a href ui-sref="app.aboutUs">Vendors</a>
+            <a ng-click="openLoginPage()">Register</a>
+            <a ng-click="openLoginPage()">LOGIN</a>
+            <a><i class="ion-earth" style="font-size:20px;" id="openGoogleTranslator"></i></a>
+        </md-list>
+    </md-content>
+</md-sidenav>
+<md-content ui-view='mainContent'></md-content>
+<div class="footer" layout="column">
+    <div layout="row" layout-align="center center">
+        <a href="http://instagram.com/wedivite" class="instagram" target="_blank" alt="Instagram">
+            <i class="socialIcons ion-social-instagram-outline"></i></a>
+        <a href="https://www.youtube.com/channel/UCViaxxlG9Noww2wHLfNoDWA" class="youtube" alt="YouTube" target="_blank">
+            <i class="socialIcons ion-social-youtube"></i></a>
+        <a href="http://pinterest.com/wedivite" class="pinterest" target="_blank" alt="Pinterest">
+            <i class="socialIcons ion-social-pinterest-outline"></i></a>
+        <a href="http://www.twitter.com/wedivite" class="twitter" target="_blank" alt="Twitter">
+            <i class="socialIcons ion-social-twitter"></i></a>
+        <a href="http://www.facebook.com/wedivite" class="facebook" target="_blank" alt="Facebook">
+            <i class="socialIcons ion-social-facebook"></i></a>
+        <a href="https://plus.google.com/+wedivite" class="gplus" target="_blank" alt="Google Plus">
+            <i class="socialIcons ion-social-googleplus-outline"></i></a>
+    </div>
+    <div layout="row" layout-xs="column" style="padding-top:18px">
+        <p2>© 2015 Wedivite. Built with a lot of <img src="images/emoji.png" style="height:12px;width:12px"> and fun.
+            <br><br>
+            <a href="http://www.wedivite.com/about/">About</a>
+            <a href="http://www.wedivite.com/press/">Press</a>
+            <a href="http://www.wedivite.com/contact/">Contact</a>
+            <a href="http://www.wedivite.com/support/">Help</a>
+            <a target="_blank" href="http://vendors.wedivite.com/?utm_source=wedivitecom&amp;utm_medium=footer-menu&amp;utm_campaign=sister-site">Wedding Vendors</a>
+            <a href="http://www.wedivite.com/privacyandterms/">Privacy &amp; Terms</a>
+            <a href="https://itunes.apple.com/app/apple-store/id984855218?pt=19529800&amp;ct=wedivite&amp;mt=8">Office Workout Breaks App</a>
+            <a href="http://www.wedivite.com/feed/">RSS</a>
+            <a href="http://bit.ly/wediviteios" class="ios" target="_blank"><i class="ion-social-apple" style="font-size:20px"></i></a>
+            <a href="http://bit.ly/wediviteandroid" class="android" target="_blank"><i class="ion-social-android" style="font-size:20px"></i></a>
+        </p2>
+        <span flex></span>
+        <p1><a class="toTop" style="text-decoration:none;color:#37BA85;cursor:pointer">Back to top</a></p1>
+    </div>
+</div>
+
+<style>
+    #loginText{
+        background-color: #37BA85;
+        font-weight: bold;
+    }
+    #loginText:hover{
+        background-color:white;
+        color: #37BA85;
+    }
+</style>

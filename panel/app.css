@@ -1,0 +1,501 @@
+/* app css stylesheet */
+
+.menu {
+    list-style: none;
+    border-bottom: 0.1em solid black;
+    margin-bottom: 2em;
+    padding: 0 0 0.5em;
+}
+
+.menu:before {
+    content: "[";
+}
+
+.menu:after {
+    content: "]";
+}
+
+.menu > li {
+    display: inline;
+}
+
+.menu > li:before {
+    content: "|";
+    padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+    content: "";
+    padding: 0;
+}
+
+@font-face{
+    font-family: "AbeeZee";
+    src: url(components/font/Actor-Regular.ttf);
+}
+*{
+    font-family: "AbeeZee";
+}
+.topcontainer{
+    height:630px;
+    padding-top:45px;
+    text-align: center;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center top;
+    color: #fff;
+}
+.md-toolbar-tools {
+    height:70px;
+    max-height:70px;
+    position: absolute;
+}
+.navdrawer a{
+    text-decoration: none;
+    padding:10px;
+    font-size:16px;
+    color:white;
+    cursor: pointer;
+}
+.navdrawer a:hover{
+    color: #37BA85;
+}
+.marketing{
+    padding:3%;
+}
+.gridcontent{
+    width:250px;
+    max-width:250px;
+    margin:20px;
+}
+.gridcontent p1{
+    font-size:15px;
+    text-align: center;
+}
+.gridcontent p{
+    color: black;
+    font-size:18px;
+    text-align: center;
+}
+
+.call-to-action {
+    background: #37BA85;
+    padding: 100px 0;
+    margin:50px 0;
+}
+.call-to-action p{
+    color: white;
+    font-size:25px;
+}
+#call-content{
+    width:234px;
+    max-width:234px;
+    height:60px;
+    border:3px solid white;
+    border-radius:5px;
+    cursor: pointer;
+}
+#call-content:hover {
+    background-color: white;
+}
+#call-content:hover p1{
+    color: #37BA85;
+}
+#call-content p1{
+    color: white;
+    font-weight: bold;
+}
+#button{
+    background-color: #37BA85;
+    color:white;
+    text-transform: none;
+    height:40px;
+    font-weight: bold;
+    margin-top:10px;
+}
+#button:hover{
+    background-color:white;
+    color: #37BA85;
+}
+md-input-container .md-input:focus{
+    border-bottom-width: 2px !important;
+    border-bottom-color: #37BA85 !important;
+}
+.md-input-focused label{
+    color: #37BA85 !important;
+}
+md-input-container.md-default-theme .md-input, md-input-container .md-input {
+    color: white;
+    border-bottom:2px solid white;
+    text-transform: uppercase;
+}
+md-input-container label:not(.md-container-ignore) {
+    color: #37BA85;
+}
+
+.dashboard{
+    padding-top:30px;
+    padding-bottom:70px;
+    padding-left:20px;
+    padding-right:25px;
+}
+.dashboard-left{
+    width:700px;
+    padding-left:20px;
+    padding-right:5%;
+}
+.dashboard-left p1{
+    font-size:45px;
+    color: black;
+    font-weight: bold;
+}
+.dashboard-left p3{
+    font-size:20px;
+    color: #666666;
+    margin-top:15px;
+}
+#button2{
+    background-color: #37BA85;
+    color:white;
+    text-transform: none;
+    height:45px;
+    width:230px;
+    font-weight: bold;
+    margin-top:20px;
+    margin-left:-5px;
+}
+
+.feature{
+    padding-top:50px;
+    padding-bottom:70px;
+    padding-left:20px;
+    padding-right:25px;
+}
+.feature-right{
+    width:700px;
+    padding-left:5%;
+    padding-right:25px;
+}
+.feature-right p1{
+    font-size:45px;
+    color: black;
+    font-weight: bold;
+}
+.feature-right p3{
+    font-size:20px;
+    color: #666666;
+    margin-top:15px;
+}
+
+.appatstore{
+    padding-top:30px;
+    padding-bottom:70px;
+    padding-left:20px;
+    padding-right:25px;
+}
+.appatstore-left{
+    width:700px;
+    padding-left:20px;
+    padding-right:5%;
+}
+.appatstore-left p2{
+    font-size:45px;
+    color: black;
+    font-weight: bold;
+}
+.appatstore-left p3{
+    font-size:20px;
+    color: #666666;
+    margin-top:15px;
+}
+
+.reviewtop{
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+.review img.reviewer-pic {
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 50%;
+}
+.review {
+    background-color: white;
+    padding:18px;
+    border-radius: 2px;
+    box-shadow: 3px 5px 5px rgba(0,0,0,.05);
+    margin: 50px 0 20px 0;
+    min-height: 320px;
+    max-height:320px;
+    text-align: center;
+    min-width:207px;
+    max-width:260px;
+    margin: auto;
+}
+.glide__track {
+    margin-left: -45px;
+}
+.review p{
+    font-size:13px;
+    margin-top:-10px;
+}
+.review h4{
+    margin-top:-5px;
+    padding-top:5px;
+}
+.review h6{
+    margin-top:-15px;
+}
+
+.owl-reviews .item {
+    padding: 0 18px;
+}
+
+.createsection{
+    background: #37BA85;
+    padding:20px 0;
+    margin:30px 0;
+}
+.createsection p{
+    color: white;
+    font-size:25px;
+}
+
+.footer{
+    padding-top:20px;
+    padding-bottom:30px;
+    padding-left:10%;
+    padding-right:10%;
+}
+.footer p2{
+    font-size:14px;
+    color:black;
+}
+.footer p2 a{
+    padding:5px;
+    color:#37BA85;
+    text-decoration: none
+}
+
+.socialIcons{
+    color:black;
+    font-size:27px;
+    padding:7px;
+}
+.goog-logo-link, .goog-logo-link:link, .goog-logo-link:visited, .goog-logo-link:hover, .goog-logo-link:active {
+    display: none;
+}
+.goog-te-gadget .goog-te-combo {
+    width:0px;
+    height:0px;
+    top:9%;
+    right: 0px;
+    position:fixed;
+}
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+body {
+    top: 0px !important;
+}
+.f-nav{
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+.md-sidenav-right {
+    left: 100%;
+    top: 10%;
+    bottom:10%;
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+}
+md-sidenav {
+    box-sizing: border-box;
+    position: fixed;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    z-index: 60;
+    width: 320px;
+    height:405px;
+    max-width: 320px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+md-sidenav.md-default-theme, md-sidenav, md-sidenav.md-default-theme md-content, md-sidenav md-content {
+    background-color:graytext;
+}
+.navitems{
+    margin-top:10px;
+}
+.navitems a{
+    padding:9px;
+    color:#37BA85;
+    font-size:18px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.navitems a:hover{
+    color:white;
+    font-weight: bolder;
+}
+
+.glide__arrow {
+    position: absolute;
+    z-index: 2;
+    color: black;
+    text-transform: uppercase;
+    font: 11px Arial, sans-serif;
+    padding: 9px 12px;
+    background-color: transparent;
+    border: 2px solid #37BA85;
+    border-radius: 4px;
+    opacity: 1;
+    -webkit-transition: opacity 150ms ease, border 300ms ease-in-out;
+    transition: opacity 150ms ease, border 300ms ease-in-out;
+}
+.glide__arrow:hover {
+    color: #37BA85;
+    border: 2px solid white;
+}
+.glide__bullets {
+    display: none;
+}
+
+
+.featured-page {
+    background-image: url('images/about-wedivite-invitation.jpg');
+    height: 400px;
+    margin-bottom: 60px;
+    text-align: center;
+    padding: 0;
+    background-size: cover;
+    background-position: center top ;
+    color: #fff;
+}
+.featured-image-overlay {
+    background: rgba(66,69,67,0.7);
+    width: 100%;
+    height: 100%;
+}
+.wedivite-page-breakcrumbs{
+    background: rgba(66,69,67,0.8);
+    padding-left:10%;
+    padding-right: 10%;
+    padding-top:11px;
+    padding-bottom:7px;
+    font-size: 15px;
+    margin-top: -40px;
+}
+.container {
+    padding-right:9%;
+    padding-left:9%;
+}
+.featurette-divider{
+    border-top: 1px solid #eee;
+}
+.row_text-center{
+    text-align: center;
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+.wedivite-couple{
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+
+.countsection{
+    padding-top:7%;
+    padding-bottom:7%;
+}
+
+.countsection p1{
+    font-size:30px;
+    font-weight: bold;
+    margin-top:15px
+
+}
+.countsection p2{
+    font-size:21px;
+    color:#999999
+}
+.text-center{
+    padding-top:20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 23px
+}
+.wedivite-feature-list li {
+    height: 130px;
+    float: left;
+    max-width:320px;
+    margin: 15px;
+    counter-increment: step-counter;
+}
+.wedivite-feature-list li::before {
+    content: counter(step-counter);
+    margin-right: 5px;
+    font-size: 85%;
+    background-color: #c8c8c8;
+    color: white;
+    font-weight: bold;
+    padding: 6px 8px;
+    border-radius: 3px;
+    line-height: 0;
+    margin-left: -35px;
+}
+.wedivite-feature-list ol {
+    margin-left: 0;
+    padding-right: 0;
+    list-style-type: none;
+}
+
+.wedivite-app{
+    background-image: url('images/wedivite-app.jpg');
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    margin-bottom:20px
+}
+
+
+.inspiration-page{
+    background-image: url('images/wedding-diy-ideas.jpg');
+    height: 400px;
+    margin-bottom: 60px;
+    text-align: center;
+    padding: 0;
+    background-size: cover;
+    background-position: center top ;
+    color: #fff;
+}
+.inspiration-image-overlay {
+    background: rgba(66,69,67,0.7);
+    width: 100%;
+    height: 100%;
+}
+.docontainer {
+    max-width:100%;
+    padding-right:5%;
+    padding-left:5%;
+    margin-left: auto;
+}
+.imageContainer p1{
+    font-size:23px;
+    margin:10px
+}
+.imageContainer img{
+    width: 100%;
+    max-width:450px;
+    border-top: 3px solid green;
+    margin: 18px;
+}

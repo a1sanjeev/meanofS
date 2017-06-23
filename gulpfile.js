@@ -23,10 +23,7 @@ gulp.task('open',function () {
         .pipe(webserver(options));
 });
 
-gulp.task('watch',function () {
-    gulp.watch('./gulpfile.js',['open']);
+gulp.task('default', ['open'], function() {
 });
 
-gulp.task('default', ['open','watch'], function() {
 
-});
