@@ -14,5 +14,8 @@
     "gulp-uglify": "^3.0.0",
     "gulp-watch": "^4.3.11",
     "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "gulp-nodemon": "^2.2.1"
   }
 }

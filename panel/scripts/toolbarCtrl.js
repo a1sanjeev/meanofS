@@ -3,7 +3,7 @@
  */
 
 'use strict';
-angular.module('app.toolbar', [])
+angular.module('toolbar', [])
     .controller('toolbarCtrl', ['$scope', '$mdSidenav', function ($scope, $mdSidenav,$stateProvider) {
         $(document).ready(function ($) {
             var nav = $('.md-toolbar-tools');

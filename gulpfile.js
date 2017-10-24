@@ -3,11 +3,8 @@
  */
 
 var gulp = require('gulp');
-var clean = require('gulp-clean');
-var uglify = require('gulp-uglify');
-var open = require('gulp-open');
-var watch=require('gulp-watch');
 var webserver=require('gulp-webserver');
+var nodemon=require('gulp-nodemon');
 
 var _index='./panel/';
 var options = {
@@ -18,12 +15,19 @@ var options = {
     open:true
 };
 
+gulp.task('node',function(){
+    nodemon({
+        script:'./apis/server.js',
+        env:{'NODE_ENV':'devlopment'}
+    })
+});
+
 gulp.task('open',function () {
     gulp.src(_index)
         .pipe(webserver(options));
 });
 
-gulp.task('default', ['open'], function() {
+gulp.task('default', ['node','open'], function() {
 });
 
 

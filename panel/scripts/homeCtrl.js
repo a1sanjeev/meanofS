@@ -3,7 +3,7 @@
  */
 
 
-angular.module('app.home', [])
+angular.module('home', [])
 
     .controller('homeCtrl', function ($scope) {
 

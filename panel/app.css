@@ -43,7 +43,7 @@
     background-image: url('images/background.jpg');
     background-size: cover;
     background-position: center top;
-    color: #fff;
+    color: black;
 }
 .md-toolbar-tools {
     height:70px;
@@ -54,7 +54,7 @@
     text-decoration: none;
     padding:10px;
     font-size:16px;
-    color:white;
+    color:black;
     cursor: pointer;
 }
 .navdrawer a:hover{
@@ -344,7 +344,7 @@ md-sidenav.md-default-theme, md-sidenav, md-sidenav.md-default-theme md-content,
     font-weight: bold;
 }
 .navitems a:hover{
-    color:white;
+    color:black;
     font-weight: bolder;
 }
 
@@ -364,7 +364,7 @@ md-sidenav.md-default-theme, md-sidenav, md-sidenav.md-default-theme md-content,
 }
 .glide__arrow:hover {
     color: #37BA85;
-    border: 2px solid white;
+    border: 2px solid black;
 }
 .glide__bullets {
     display: none;
